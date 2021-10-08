@@ -16,6 +16,9 @@ A minimal rapid prototyping framework for javascript development.
 * Run `npm go`
 
 This starts a live-reload environment based off the web server, Budo.
+
+`localhost:9966` throw this URL into a web browser to see what's up.
+
 Any time you change app.js the web browser will reload automagically.
 
 ## Credits
