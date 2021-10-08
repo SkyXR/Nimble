@@ -1,0 +1,33 @@
+{
+  "name": "rapidjs",
+  "version": "1.0.0",
+  "description": "minimal rapid prototyping framework",
+  "main": "go.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "go": "budo app.js --live -t babelify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyXR/RapidJS.git"
+  },
+  "keywords": [
+    "rapid",
+    "prototyping",
+    "javascript",
+    "js",
+    "budo"
+  ],
+  "author": "Allan Lavell ~ SkyXR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SkyXR/RapidJS/issues"
+  },
+  "homepage": "https://github.com/SkyXR/RapidJS#readme",
+  "devDependencies": {
+    "budo": "^11.6.4"
+  },
+  "dependencies": {
+    "babelify": "^10.0.0"
+  }
+}
