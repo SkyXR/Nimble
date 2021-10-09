@@ -1,3 +1,3 @@
 console.log("sup")
 
-document.body.style.backgroundColor = "purple";
+document.body.style.backgroundColor = "pink";

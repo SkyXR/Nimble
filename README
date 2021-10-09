@@ -1,14 +1,14 @@
-# RapidJS
+RapidJS
+=======
 
 A minimal rapid prototyping framework for javascript development.
-
-## Concept
 
 * Fast live-reloading: the basis of any rapid prototyping framework
 * Unopinionated: doesn't force you to use React, Vue, Angular, etc. 
 * Open-Source: obviously. And with actual docs.
 
-## Usage
+Usage
+-----
 
 * Install npm (or pnpm, or yarn).
 * git clone this repo
@@ -21,7 +21,8 @@ This starts a live-reload environment based off the web server, Budo.
 
 Any time you change app.js the web browser will reload automagically.
 
-## Credits
+Credits
+-------
 
 Matt Desl ~ Creator of Budo server
 Allan Lavell ~ SkyXR 2021
