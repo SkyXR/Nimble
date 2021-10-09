@@ -24,5 +24,5 @@ Any time you change app.js the web browser will reload automagically.
 Credits
 -------
 
-Matt Desl ~ Creator of Budo server
-Allan Lavell ~ SkyXR 2021
+* Matt Desl ~ Creator of Budo server
+* Allan Lavell ~ SkyXR 2021
