@@ -24,5 +24,10 @@ Any time you change app.js the web browser will reload automagically.
 Credits
 -------
 
-* Matt Desl ~ Creator of Budo server
-* Allan Lavell ~ SkyXR 2021
+* Allan Lavell ~ Sky
+* Matt Desl ~ Budo
+* Andre Staltz ~ Cycle.JS
+* Tailwind Labs ~ Tailwind CSS
+* Pouya Saadeghi ~ daisyUI
+* Facebook ~ JSX
+* Tim Berners-Lee ~ obviously
