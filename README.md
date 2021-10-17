@@ -5,7 +5,7 @@ A minimal rapid prototyping framework for javascript development.
 
 * Fast live-reloading: the basis of any rapid prototyping framework
 * Unopinionated: doesn't force you to use React, Vue, Angular, etc. 
-* Open-Source: obviously. And with actual docs.
+* Open-Source: MIT Licensed. Use this in open _or_ closed source projects.
 
 Usage
 -----
