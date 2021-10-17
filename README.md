@@ -1,5 +1,5 @@
-RapidJS
-=======
+Nimble
+======
 
 A minimal rapid prototyping framework for javascript development.
 
