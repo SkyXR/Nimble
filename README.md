@@ -31,4 +31,4 @@ Credits
 * Tailwind Labs ~ Tailwind CSS
 * Pouya Saadeghi ~ daisyUI
 * Facebook ~ JSX
-* Tim Berners-Lee ~ obviously
+* Brandon Eich ~ Javascript
