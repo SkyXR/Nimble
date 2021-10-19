@@ -24,8 +24,8 @@ Any time you change app.js the web browser will reload automagically.
 Credits
 -------
 
-* Allan Lavell ~ Sky
-* Cody Walker ~ Sky
+* Allan Lavell ~ SkyXR
+* Cody Walker ~ SkyXR
 * Matt Desl ~ Budo
 * Andre Staltz ~ Cycle.JS
 * Tailwind Labs ~ Tailwind CSS
