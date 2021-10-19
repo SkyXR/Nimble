@@ -25,6 +25,7 @@ Credits
 -------
 
 * Allan Lavell ~ Sky
+* Cody Walker ~ Sky
 * Matt Desl ~ Budo
 * Andre Staltz ~ Cycle.JS
 * Tailwind Labs ~ Tailwind CSS
