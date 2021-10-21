@@ -3,14 +3,21 @@ import {run} from '@cycle/run';
 import {makeDOMDriver} from '@cycle/dom';
 import Snabbdom from 'snabbdom-pragma';
 
+function midiAccess(midi) {
+	console.log(midi)
+}	
+
+function midiFailed() {
+	console.log("failed!")
+}
+
 function main(sources) {
+	navigator.requestMIDIAccess().then(midiAccess, midiFailed)
+	
   const dom = {
 		DOM: xs.of(
-			<div className="mt-10 mb-2 mx-10 text-center">
-				<h1 className="bg-purple-700 mb-5 font-bold text-2xl">this is a live prototyping env with budo, cycle.js, jsx, tailwind & daisyUI</h1>
-				<p className="mb-1">it's a simple way of approaching coding</p>
+			<div className="mt-20 mb-2 mx-10 text-center">
 				<img className="mx-auto w-64" src="castle.jpg" />
-				<p className="mb-3">edit js which pulls events from a stream and renders out html in response using frp & jsx</p>
 			</div>
 		)
   }
