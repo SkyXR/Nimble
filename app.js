@@ -3,21 +3,24 @@ import {run} from '@cycle/run';
 import {makeDOMDriver} from '@cycle/dom';
 import Snabbdom from 'snabbdom-pragma';
 
-function midiAccess(midi) {
-	console.log(midi)
-}	
-
-function midiFailed() {
-	console.log("failed!")
-}
-
 function main(sources) {
-	navigator.requestMIDIAccess().then(midiAccess, midiFailed)
+	var rx = xs
+
+	rx.fromPromise(navigator.requestMIDIAccess()).addListener({'next': 
+		function(midi) {
+			var ctrl = midi.inputs.values().next().value
+			ctrl.onmidimessage = function(x) {
+				if (x.data[0] != 176) {
+					console.log(x.data[0])
+				}
+			}
+		}
+	})
 	
   const dom = {
-		DOM: xs.of(
+		DOM: rx.of(
 			<div className="mt-20 mb-2 mx-10 text-center">
-				<img className="mx-auto w-64" src="castle.jpg" />
+				<p>wadi</p>
 			</div>
 		)
   }
@@ -30,3 +33,21 @@ const drivers = {
 };
 
 run(main, drivers);
+
+
+/*
+			var producer = {
+				start: function (listener) {
+					for (var input of midi.inputs.values()) {
+						input.onmidimessage = function(message) {
+							console.log("adaida")
+							listener.next(message)
+						}
+					}
+				},
+				stop: function () {
+					console.log("unimplenented")
+				},
+			}
+			var stream = rx.create(producer)
+*/
