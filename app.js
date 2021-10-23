@@ -5,13 +5,27 @@ import Snabbdom from 'snabbdom-pragma';
 
 function main(sources) {
 	var rx = xs
+	var a = new Audio('seasnare.wav')
+	var b = new Audio('seasnare2.wav')
+	var c = new Audio('seasnare3.wav')
+	var d = new Audio('seasnare4.wav')
+
+	var i = 0
 
 	rx.fromPromise(navigator.requestMIDIAccess()).addListener({'next': 
 		function(midi) {
 			var ctrl = midi.inputs.values().next().value
 			ctrl.onmidimessage = function(x) {
 				if (x.data[0] != 176) {
-					console.log(x.data[0])
+					console.log(x.data)
+					if (x.data[0] == 153) {
+						x = i % 3
+						if (x == 0) { a.play() }
+						if (x == 1) { b.play() }
+						if (x == 2) { c.play() }
+						if (x == 2) { d.play() }
+						i++
+					}
 				}
 			}
 		}
