@@ -9,9 +9,12 @@ function main(sources) {
 	var b = new Audio('seasnare2.wav')
 	var c = new Audio('seasnare3.wav')
 	var d = new Audio('seasnare4.wav')
+	a.volume = 0.5
+	b.volume = 0.5
+	c.volume = 0.5
+	d.volume = 0.5
 
 	var i = 0
-
 	rx.fromPromise(navigator.requestMIDIAccess()).addListener({'next': 
 		function(midi) {
 			var ctrl = midi.inputs.values().next().value
@@ -19,11 +22,11 @@ function main(sources) {
 				if (x.data[0] != 176) {
 					console.log(x.data)
 					if (x.data[0] == 153) {
-						x = i % 3
+						x = i % 4
 						if (x == 0) { a.play() }
 						if (x == 1) { b.play() }
 						if (x == 2) { c.play() }
-						if (x == 2) { d.play() }
+						if (x == 3) { d.play() }
 						i++
 					}
 				}
